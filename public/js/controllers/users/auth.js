@@ -2,12 +2,20 @@ angular.module('mean.auth').controller('socialAuth', ['$scope', 'Global','$state
     $scope.global = Global;
 
     $scope.menu = [{
-        "title": "Articles",
+        "title": "Artic",
         "state": "articles"
     }, {
-        "title": "Create New Article",
+        "title": "Create  Article",
         "state": "createArticle"
-    }];
+    },
+     {
+        "title": "Requests",
+        "state": "requests"
+    }, {
+        "title": "Create New Request",
+        "state": "createRequest"
+    }
+                  ];
 
     $scope.isCollapsed = false;
 

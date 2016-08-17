@@ -40,6 +40,26 @@ angular.module('mean').config(['$stateProvider','$urlRouterProvider', function($
             controller : 'ArticlesController',
             templateUrl: 'views/articles/view.html'
         })
+     .state('requests',{
+            url : '/requests',
+            controller : 'RequestsController',
+            templateUrl: 'views/requests/list.html'
+        })
+        .state('createRequest',{
+            url : '/requests/create',
+            controller : 'RequestsController',
+            templateUrl: 'views/requests/create.html'
+        })
+        .state('editRequests',{
+            url : '/requests/{requestId}/edit',
+            controller : 'RequestsController',
+            templateUrl: 'views/requests/edit.html'
+        })
+        .state('viewRequest',{
+            url : '/requests/{requestId}',
+            controller : 'RequestsController',
+            templateUrl: 'views/requests/view.html'
+        })
         .state('404',{
             templateUrl: 'views/404.html'
         })
